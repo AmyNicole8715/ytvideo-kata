@@ -42,7 +42,7 @@ And more info on Typography:
 https://mui.com/components/typography/
 
 
-## Example:##
+## Example ##
 
 ![image of app](https://i.imgur.com/iC6GT4z.png)
 
