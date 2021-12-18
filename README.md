@@ -17,6 +17,10 @@ yarn add @mui/material @mui/styles @mui/icons-material @emotion/react @emotion/s
 __Add Fonts (feel free to pick your own via https://fontsource.org/fonts)__
 yarn add @fontsource/roboto @fontsource/bebas-neue
 
+# In order to start we must run in https #
+yarn start HTTPS=true
+
+
 ## Next setup your theme in theme/theme.js
 To build a custom theme there are several tools available:
 
