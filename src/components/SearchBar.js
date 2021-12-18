@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -7,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 
-import { useData, DataContext } from '../context/DataContext';
+import { useData } from '../context/DataContext';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -53,10 +52,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
     const { searchTermChange } = useData();
-
+    
     const handleChange = (e) => {
-        console.log(e.target.value);
+      if(e.key === 'Enter') {
+        console.log('Enter key pressed');
         searchTermChange(e.target.value);
+      }
     };
 
   return (
@@ -77,7 +78,7 @@ export default function SearchAppBar() {
             </SearchIconWrapper>
             <StyledInputBase
               type='text'
-              onChange={(e) => handleChange(e)}
+              onKeyPress={(e) => handleChange(e)}
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
@@ -86,4 +87,4 @@ export default function SearchAppBar() {
       </AppBar>
     </Box>
   );
-}
+  }

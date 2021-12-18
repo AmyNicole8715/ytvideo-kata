@@ -25,17 +25,17 @@ export function DataProvider ({ children }) {
 
     // change movie title for youtube search
     const searchTermChange = (e) => {
-        console.log(e.target.value + ' entered')
-        setSearchTerm(e.target.value);
+        console.log(e + ' entered')
+        setSearchTerm(e);
         dispatch ({ type: SET_SEARCH_TERM, payload: e });
     };
 
     // fetches movie trailer from youtube
-    const fetchVideos = async (term) => {
+    const fetchVideos = async (searchTerm) => {
         try {
             const response = await youtube.get('/search', {
                 params: {
-                    q: term,
+                    q: searchTerm,
                     },
                 });
             dispatch({

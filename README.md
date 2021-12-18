@@ -2,19 +2,19 @@
 
 ## Installation:
 
-<<Create app>>
+__Create app__
 npx create-react-app ytvideo-kata
 
-<<Change to directory>>
+__Change to directory__
 cd ytvideo-kata
 
-<<Add hook to display video>>
+__Add hook to display video__
 yarn add react-player
 
-<<Add themeing libaries, we are using styled components but will need to install all of mui components to be sure that we have what we need>>
+__Add themeing libaries, we are using styled components but we will need to install all of mui components to be sure that we have what we need if we want to customize__
 yarn add @mui/material @mui/styles @mui/icons-material @emotion/react @emotion/style @mui/styled-engine-sc styled-components
 
-<<Add Fonts (feel free to pick your own via https://fontsource.org/fonts)>>
+__Add Fonts (feel free to pick your own via https://fontsource.org/fonts)__
 yarn add @fontsource/roboto @fontsource/bebas-neue
 
 ## Next setup your theme in theme/theme.js
@@ -34,4 +34,16 @@ The following components will be needed for our app from MUI:
 
 App Bar with Search Field
 https://mui.com/components/app-bar/#app-bar-with-search-field
+
+Paper
+https://mui.com/components/paper
+
+And more info on Typography:
+https://mui.com/components/typography/
+
+
+## Example:##
+
+![image of app](https://i.imgur.com/iC6GT4z.png)
+
 
