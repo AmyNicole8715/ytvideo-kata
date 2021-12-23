@@ -15,7 +15,7 @@ const initialState = {
 };
 
 export const DataContext = createContext({
-    searchTerm: 'bad omens death of peace of mind',
+    searchTerm: '',
 });
 
 export function DataProvider ({ children }) {
