@@ -13,12 +13,7 @@ const StyledPaper = styled(Paper)({
     width: 'max-content',
 });
 
-const Wrapper = styled('div')({
-    position: 'relative',
-    margin: '0',
-    maxHeight: '525px',
-    boxSizing: 'content-box',
-});
+const Wrapper = styled('div')({});
 
 const Title = styled('div')({
     position: 'relative',
