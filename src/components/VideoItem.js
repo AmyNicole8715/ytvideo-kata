@@ -13,22 +13,31 @@ const StyledPaper = styled(Paper)({
     width: 'max-content',
 });
 
-const StyledDiv = styled('div')({
+const Wrapper = styled('div')({
     position: 'relative',
     margin: '0',
     maxHeight: '525px',
     boxSizing: 'content-box',
 });
 
+const Title = styled('div')({
+    position: 'relative',
+    width: 'max-content',
+    fontFamily: 'Bebas Neue',
+    fontSize: '1.5rem',
+});
 
 
 
 export default function VideoItem() {
-    const { videos } = useData();
+    const { videos, searchTerm } = useData();
 
     return (
         <StyledPaper>
-                <StyledDiv >
+                <Wrapper>
+                    <Title>
+                        {searchTerm}
+                    </Title>
                     <ReactPlayer
                             url={`https://www.youtube.com/watch?v=${videos}`}
                             height='100%'
@@ -39,7 +48,7 @@ export default function VideoItem() {
                             volume={0.5}
                             aria-label='video'
                         />
-                </StyledDiv>
+                </Wrapper>
         </StyledPaper>
     );
 }
