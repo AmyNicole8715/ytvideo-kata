@@ -56,7 +56,8 @@ You will place your key in a .env file placed in the app's root directory.
 React App will automatically load the key from the .env file. So long as you name it REACT_APP_YOUTUBE_API_KEY, it will be loaded.
 
 ## You MUST add your .env file to your .gitignore file, otherwise your key will be public. ##
-
+In key.js you will need to add the following line for the app to work:
+export const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
 
 
