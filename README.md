@@ -11,13 +11,16 @@ cd ytvideo-kata
 __Add hook to display video__
 yarn add react-player
 
+__Add hook to retrieve API call__
+yarn add axios
+
 __Add themeing libaries, we are using styled components but we will need to install all of mui components to be sure that we have what we need if we want to customize__
 yarn add @mui/material @mui/styles @mui/icons-material @emotion/react @emotion/style @mui/styled-engine-sc styled-components
 
 __Add Fonts (feel free to pick your own via https://fontsource.org/fonts)__
 yarn add @fontsource/roboto @fontsource/bebas-neue
 
-# In order to start we must run in https #
+# In order to start we may need to run in https #
 yarn start HTTPS=true
 
 
@@ -48,6 +51,6 @@ https://mui.com/components/typography/
 
 ## Example ##
 
-![image of app](https://i.imgur.com/iC6GT4z.png)
+![image of app](https://i.imgur.com/hSzewh6.png)
 
 
